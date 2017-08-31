@@ -10,11 +10,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'ctrlpvim/ctrlp'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'flazz/vim-colorschemes'
 
 Plugin 'scrooloose/nerdtree'
+
+Plugin 'jalvesaq/Nvim-R'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,6 +33,12 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
+
+" R specific
+let g:R_term_cmd = 'termite'
+let vimrplugin_applescript=0
+let vimrplugin_vsplit=1
+let R_tmux_split=1 
 
 syntax enable
 
